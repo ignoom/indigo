@@ -1,0 +1,30 @@
+<div ng-controller="UsersCtrl">
+
+</div>
+
+<div flex layout="row" layout-align="center center">
+  <div flex="60" class="">
+    <form role="form" action="/oauth/token" method="post">
+      <md-input-container>
+        <label>Grant Type</label>
+        <input type="text" name="grant_type" placeholder="Grant Type">
+      </md-input-container>
+      <md-input-container>
+        <label>Client ID</label>
+        <input type="text" name="client_id" placeholder="Client ID">
+      </md-input-container>
+      <md-input-container>
+        <label>User Name</label>
+        <input type="text" name="username" placeholder="User Name">
+      </md-input-container>
+      <md-input-container>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Password">
+      </md-input-container>
+      <!-- TODO centrar el boton -->
+      <div flex layout="row">
+        <md-button class="md-raised md-cornered" type="submit">Login</md-button>
+      </div>
+    </form>
+  </div>
+</div>
