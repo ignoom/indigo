@@ -6,6 +6,7 @@ angular.module('indigo', [
   'indigo.view1',
   'indigo.view2',
   'indigo.users',
+  'indigo.clients',
   'indigo.version',
   'ngMaterial'
 ]).

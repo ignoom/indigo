@@ -1,0 +1,26 @@
+<div ng-controller="UsersCtrl">
+
+</div>
+
+<div flex layout="row" layout-align="center center">
+  <div flex="60" class="">
+		<form role="form" action="/users/local/register" method="post">
+			<md-input-container>
+        	<label>Name</label>
+ 	 			<input type="text" name="name" placeholder="User Name">
+ 	 		</md-input-container>
+ 	 		<md-input-container>
+ 	 			<label>Email</label>
+ 	      		<input type="text" name="email" placeholder="Email">
+ 	 		</md-input-container>
+ 	 		<md-input-container>
+ 	 			<label>Password</label>
+ 	      		<input type="password" name="password" placeholder="Password">
+ 	 		</md-input-container>
+	    <div flex layout="row">
+ 	      <md-button class="md-raised md-cornered" type="submit">Register User</md-button>
+ 	    </div>
+		</form>
+  </div>
+</div>
+
