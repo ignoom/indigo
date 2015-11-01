@@ -1,18 +1,6 @@
 <div flex layout="row" layout-align="center center" ng-controller="UsersCtrl">
   <div flex="60" class="">
-    <form name="usersLogin" role="form" ng-submit="login(user)">
-      <md-input-container>
-        <label>Grant Type</label>
-         <!-- I think the following is part of line 7 but does not work: ng-model="user.grantType" required > -->
-        <input type="text" name="grantType" placeholder="Grant Type"
-        ng-model="user.grantType" required>
-      </md-input-container>
-      <md-input-container>
-        <label>Client ID</label>
-        <!-- I think the following is part of line 12 but does not work: ng-model="user.clientId" required > -->
-        <input type="text" name="clientId" placeholder="Client ID"
-        ng-model="user.clientId" required>
-      </md-input-container>
+    <form name="usersLogin" ng-submit="login(user)">
       <md-input-container>
         <label>User Name</label>
         <input type="text" name="username" placeholder="User Name"
