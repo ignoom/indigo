@@ -1,20 +1,25 @@
-<div flex layout="row" layout-align="center center" ng-controller="UsersCtrl">
-  <div flex="60" class="">
-    <form name="usersLogin" ng-submit="login(user)">
-      <md-input-container>
-        <label>User Name</label>
-        <input type="text" name="username" placeholder="User Name"
-        ng-model="user.username" required>
-      </md-input-container>
-      <md-input-container>
-        <label>Password</label>
-        <input type="password" name="password" placeholder="Password"
-        ng-model="user.password" required>
-      </md-input-container>
-      <div flex layout="row" layout-align="center center">
-        <md-button class="md-raised md-cornered" type="submit">Login</md-button>
-      </div>
-    </form>
+<div layout-align="center center" ng-controller="UsersCtrl" layout="row" layout-wrap>
+  <div flex="60">
+    <div class="animate-show" flex="grow" ng-show="formMessage" layout="column">
+      {{formMessage}}
+    </div>
+    <div flex="grow" layout="column" >
+      <form name="usersLogin" ng-submit="login(user)">
+        <md-input-container>
+          <label>User Name</label>
+          <input type="text" name="username" placeholder="User Name"
+          ng-model="user.username" required>
+        </md-input-container>
+        <md-input-container>
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password"
+          ng-model="user.password" required>
+        </md-input-container>
+        <div flex layout="row" layout-align="center center">
+          <md-button class="md-raised md-cornered" type="submit">Login</md-button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
