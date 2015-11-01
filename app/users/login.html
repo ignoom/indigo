@@ -4,21 +4,23 @@
       <md-input-container>
         <label>Grant Type</label>
          <!-- I think the following is part of line 7 but does not work: ng-model="user.grantType" required > -->
-        <input type="text" name="grant_type" placeholder="Grant Type">
+        <input type="text" name="grantType" placeholder="Grant Type"
+        ng-model="user.grantType" required>
       </md-input-container>
       <md-input-container>
         <label>Client ID</label>
         <!-- I think the following is part of line 12 but does not work: ng-model="user.clientId" required > -->
-        <input type="text" name="client_id" placeholder="Client ID">
+        <input type="text" name="clientId" placeholder="Client ID"
+        ng-model="user.clientId" required>
       </md-input-container>
       <md-input-container>
         <label>User Name</label>
-        <input type="text" name="username" placeholder="User Name" 
+        <input type="text" name="username" placeholder="User Name"
         ng-model="user.username" required>
       </md-input-container>
       <md-input-container>
         <label>Password</label>
-        <input type="password" name="password" placeholder="Password" 
+        <input type="password" name="password" placeholder="Password"
         ng-model="user.password" required>
       </md-input-container>
       <div flex layout="row" layout-align="center center">
