@@ -1,26 +1,21 @@
-<div ng-controller="UsersCtrl">
-
-</div>
-
-<div flex layout="row" layout-align="center center">
+<div flex layout="row" layout-align="center center" ng-Controller="UsersCtrl">
   <div flex="60" class="">
-		<form role="form" action="/users/local/register" method="post">
+		<form name="usersRegister" role="form" ng-submit="register(user)">
 			<md-input-container>
         	<label>Name</label>
- 	 			<input type="text" name="name" placeholder="User Name">
+ 	 			<input type="text" name="name" placeholder="User Name" ng-model="user.name" required>
  	 		</md-input-container>
  	 		<md-input-container>
  	 			<label>Email</label>
- 	      		<input type="text" name="email" placeholder="Email">
+ 	      		<input type="text" name="email" placeholder="Email" ng-model="user.email" required>
  	 		</md-input-container>
  	 		<md-input-container>
  	 			<label>Password</label>
- 	      		<input type="password" name="password" placeholder="Password">
+ 	      		<input type="password" name="password" placeholder="Password" ng-model="user.password" required>
  	 		</md-input-container>
 	    <div flex layout="row" layout-align="center center">
  	      <md-button class="md-raised md-cornered" type="submit">Register User</md-button>
  	    </div>
 		</form>
   </div>
-</div>
-
+</div> 
